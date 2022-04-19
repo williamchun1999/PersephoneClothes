@@ -1,0 +1,31 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ul {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.products {
+  display: flex;
+  flex-flow: row wrap;
+}
+img{
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
