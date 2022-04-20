@@ -8,13 +8,45 @@
 }
 
 /******************************************
-/* LAYOUT
+/* HEADER
 /*******************************************/
-ul {
+#header {
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  text-transform: capitalize;
+  color: white;
+  background:#3a1c71;
+  text-transform:uppercase;
+}
+
+#header ul {
+  height: 4em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  
 
 }
+#header ul li {
+  flex-grow: 1;
+  text-align: right;
+  
+}
+#header ul li:first-child {
+  flex-grow: 3;
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: left;
+}
+h1 {
+  
+  color:#3a1c71;
+  font-size: 5em;
+  font-family: "Orbitron";
+}
+
+
 .products {
   display: flex;
   flex-flow: row wrap;
