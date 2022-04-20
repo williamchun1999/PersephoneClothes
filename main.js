@@ -3,7 +3,9 @@
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         for (let i = 0; i < data.length; i++){
+
           document.querySelector(`#i${String(i)}`).src = data[i].image;
+          document.querySelector(`#p${String(i)}`).innerText = data[i].description;
         }
         
       })

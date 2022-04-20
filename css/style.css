@@ -8,10 +8,14 @@
 }
 
 /******************************************
-/* HEADER
+/* BASE
 /*******************************************/
-#header {
+body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
+}
+
+#header {
+  
   text-transform: capitalize;
   color: white;
   background:#3a1c71;
@@ -34,27 +38,62 @@
   
 }
 #header ul li:first-child {
-  flex-grow: 3;
+  flex-grow: 4;
   font-size: 1.25em;
   font-weight: 600;
   text-align: left;
 }
-h1 {
+
+/******************************************
+/* BANNER
+/*******************************************/
+#banner {
+  background:url("../images/pexels-motional-studio-1081685.jpg");
+  background-size:cover;
+  background-position: 50%;
+  height: 50em;
+  background-repeat: no-repeat;
+  margin-bottom: 5em;
+  width: 100%;
   
-  color:#3a1c71;
-  font-size: 5em;
+
+}
+#banner h1 {
+  position: relative;
+  top: 25%;
+  color:white;
+  font-size: 7.5em;
   font-family: "Orbitron";
+  text-align: right;
+  right: 5%;
+  
 }
 
-
+/******************************************
+/* MAIN
+/*******************************************/
+.main h2 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 2em;
+  color:#3a1c71;
+}
 .products {
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+}
+.products div {
+  display: flex;
+  flex-flow: column wrap;
+  width: 300px;
 }
 img{
-  margin: 0 auto;
-  max-width: 50%;
-  height: auto;
+  object-fit: cover;
+  width: 150px;
+  height:auto;
 }
 
 
