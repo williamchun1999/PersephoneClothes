@@ -12,13 +12,17 @@
 /*******************************************/
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  color: white;
+  background: black;
+}
+.hide {
+  visibility: hidden;
 }
 
 #header {
   
   text-transform: capitalize;
-  color: white;
-  background:#3a1c71;
+  background:#070211;
   text-transform:uppercase;
 }
 
@@ -48,7 +52,7 @@ body {
 /* BANNER
 /*******************************************/
 #banner {
-  background:url("../images/pexels-motional-studio-1081685.jpg");
+  background:url("../images/pexels-r-fera-432059.jpg");
   background-size:cover;
   background-position: 50%;
   height: 50em;
@@ -61,7 +65,7 @@ body {
 #banner h1 {
   position: relative;
   top: 25%;
-  color:white;
+  color:#d3bff8;
   font-size: 7.5em;
   font-family: "Orbitron";
   text-align: right;
@@ -76,7 +80,7 @@ body {
   font-size: 4em;
   text-align: center;
   margin-bottom: 2em;
-  color:#3a1c71;
+  color:#d3bff8;
 }
 .products {
   margin: 0 auto;
@@ -86,16 +90,24 @@ body {
   
 }
 .products div {
-  display: flex;
-  flex-flow: column wrap;
-  width: 300px;
+  width: 400px;
+  height: auto;
+  position: relative;
 }
 img{
-  object-fit: cover;
-  width: 150px;
-  height:auto;
-}
+  object-fit:cover;
+  height: 600px;
+  width: 100%;
 
+}
+.description{
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  top: 25%;
+  margin: 0 auto;
+  left: 25%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
