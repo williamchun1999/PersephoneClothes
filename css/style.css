@@ -12,18 +12,17 @@
 /*******************************************/
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  color: white;
-  background: black;
+  color: #DDD;
+  background: #222831;
+  text-transform:uppercase;
 }
 .hide {
   visibility: hidden;
 }
 
 #header {
-  
-  text-transform: capitalize;
-  background:#070211;
-  text-transform:uppercase;
+  background:#222831;
+  border-bottom: 3px solid #DDD;
 }
 
 #header ul {
@@ -41,6 +40,10 @@ body {
   text-align: right;
   
 }
+#header ul li:hover {
+  color:#F05454;
+  cursor: pointer;
+}
 #header ul li:first-child {
   flex-grow: 4;
   font-size: 1.25em;
@@ -57,15 +60,15 @@ body {
   background-position: 50%;
   height: 50em;
   background-repeat: no-repeat;
-  margin-bottom: 5em;
   width: 100%;
+  
   
 
 }
 #banner h1 {
   position: relative;
   top: 25%;
-  color:#d3bff8;
+  color:#F05454;
   font-size: 7.5em;
   font-family: "Orbitron";
   text-align: right;
@@ -76,11 +79,14 @@ body {
 /******************************************
 /* MAIN
 /*******************************************/
+.main {
+  border-top: 3px solid #DDD;
+  padding-top: 5em;
+}
 .main h2 {
   font-size: 4em;
   text-align: center;
   margin-bottom: 2em;
-  color:#d3bff8;
 }
 .products {
   margin: 0 auto;
